@@ -1,0 +1,174 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+   flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 35px;
+    font-size: 35px;
+}
+
+.nav h6{
+    font-weight: 100;
+}
+
+section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(275px);
+    flex-direction: column;
+ }
+
+ .title h1 {
+    margin: auto;
+    font-size: 250px;
+ }
+
+.title p {
+    margin-top: 14px;
+    font-size: 25px;
+    width: 60%;
+}
+
+@-webkit-keyframes noise-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    10% {
+        transform: translate(-5vw, -5vh)
+    }
+
+    20% {
+        transform: translate(-10vw, 5vh)
+    }
+
+    30% {
+        transform: translate(5vw, -10vh)
+    }
+
+    40% {
+        transform: translate(-5vw, 15vh)
+    }
+
+    50% {
+        transform: translate(-10vw, 5vh)
+    }
+
+    60% {
+        transform: translate(15vw, 0vh)
+    }
+
+    70% {
+        transform: translate(0vw, 10vh)
+    }
+
+    80% {
+        transform: translate(-15vw, 0vh)
+    }
+
+    90% {
+        transform: translate(10vw, 5vh)
+    }
+
+    100% {
+        transform: translate(5vw, 0vh)
+    }
+}
+
+@keyframes noise-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    10% {
+        transform: translate(-5vw, -5vh)
+    }
+
+    20% {
+        transform: translate(-10vw, 5vh)
+    }
+
+    30% {
+        transform: translate(5vw, -10vh)
+    }
+
+    40% {
+        transform: translate(-5vw, 15vh)
+    }
+
+    50% {
+        transform: translate(-10vw, 5vh)
+    }
+
+    60% {
+        transform: translate(15vw, 0vh)
+    }
+
+    70% {
+        transform: translate(0vw, 10vh)
+    }
+
+    80% {
+        transform: translate(-15vw, 0vh)
+    }
+
+    90% {
+        transform: translate(10vw, 5vh)
+    }
+
+    100% {
+        transform: translate(5vw, 0vh)
+    }
+}
+
+
+
+.noise img {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 9999;
+    overflow: hidden;
+    width: 200vw;
+    height: 200vh;
+    left: -50vw;
+    top: -50vh;
+    background: rgba(0, 0, 0, 0) repeat 0 0;
+    -webkit-animation: noise-animation .2s steps(2) infinite;
+    animation: noise-animation .2s steps(2) infinite;
+    transition: opacity 1s;
+    will-change: transform;
+    background-size: cover;
+}
+
+.noise.src-loaded {
+    opacity: .95
+}
+
+.noise.fixed {
+    position: fixed
+}
