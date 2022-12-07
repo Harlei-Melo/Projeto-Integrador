@@ -255,16 +255,150 @@ span:hover::before {
 
 .rec {
     position: absolute;
-    padding: auto;
+
 }
 
-video {
-    width: 100%;
-    height: 1%;
+.videoV2 {
     position: relative;
-    top: 821px;
-    z-index: -1000;
+    left: -388px;
+}
 
+.videoV4 {
+    position: relative;
+    right: -388px;
+}
+
+
+.videoV2::before {
+    -webkit-box-shadow: 6px 2px 180px -4px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 6px 2px 180px -4px rgba(255, 255, 255, 1);
+    box-shadow: 6px 2px 180px -4px rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+.control .rec video {
+    position: absolute;
+    width: 279.5%;
+    top: 900px;
+    height: 357%;
+    left: -510px;
+    object-fit: cover;
+    z-index: -9999;
+}
+
+.control-v2 {
+    position: relative;
+    top: 985px;
+
+}
+
+.control-v2 .rec video {
+    position: absolute;
+    width: 326.9%;
+    top: 900px;
+    height: 255%;
+    left: -550px;
+    object-fit: cover;
+    z-index: -9999;
+}
+
+
+.bar-loading-two-v10 {
+    color: #fff;
+    position: relative;
+    left: -388px;
+    top: 1129px;
+}
+
+.bar-loading-two-v10 h3 {
+    margin-top: 25px;
+}
+
+.bar-loading-two-v10 h5 {
+    margin-top: 25px;
+}
+
+.bar-loading-two-v10 h4 {
+    color: #fff;
+    font-size: 10px;
+    margin-top: 55px;
+}
+
+.bar-loading-two-v10 a {
+    color: #fff;
+}
+
+
+
+.control-v3 {
+    position: relative;
+    top: 1050px;
+}
+
+
+.control-v3 .rec video {
+    position: absolute;
+    width: 326.9%;
+    top: 700px;
+    height: 257%;
+    left: -550px;
+    object-fit: cover;
+    z-index: -9999;
+}
+
+.bar-loading-two-v11 {
+    color: #fff;
+    position: relative;
+    left: -480px;
+    top: 1000px;
+}
+
+.bar-loading-two-v11 h3 {
+    margin-top: 25px;
+}
+
+.bar-loading-two-v11 h5 {
+    margin-top: 25px;
+}
+
+.bar-loading-two-v11 h4 {
+    color: #fff;
+    font-size: 10px;
+    margin-top: 55px;
+}
+
+.bar-loading-two-v11 a {
+    color: #fff;
+}
+
+
+.videoV2-v8 {
+    position: relative;
+    left: -388px;
+}
+
+.videoV4-v8  {
+    position: relative;
+    right: -547px;
+    top: -34px;
+}
+
+.videoV3-v8  {
+    position: relative;
+    right: 150px;
+}
+
+
+
+.bar-loading-two-v8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9999;
+    margin: 40px;
+    top: 1200px;
+    color: #fff;
 }
 
 .bar-loading-two {
@@ -276,6 +410,42 @@ video {
     top: 1600px;
 }
 
+.bar-loading-two-v6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9999;
+    margin: 40px;
+    top: 1407px;
+}
+
+.videoV2-v6 {
+    position: relative;
+    left: -388px;
+}
+
+.videoV4-v6  {
+    position: relative;
+    right: -547px;
+    top: -34px;
+}
+
+.videoV3-v6  {
+    position: relative;
+    right: 150px;
+}
+
+
+.bar-loading-two-v6 span {
+    cursor: pointer;
+    color: #fff;
+ 
+ 
+}
+
+
+
 .bar-loading-two span {
     cursor: pointer;
     color: #fff;
@@ -284,8 +454,8 @@ video {
 
 .bar-loading-two-v2 {
     color: #fff;
-    margin-left: 55px;
     position: relative;
+    left: -388px;
     top: 1350px;
 }
 
@@ -294,7 +464,7 @@ video {
 }
 
 .bar-loading-two-v2 h5 {
-    margin-top: 12px;
+    margin-top: 25px;
 }
 
 .bar-loading-two-v2 h4 {
@@ -308,11 +478,12 @@ video {
 }
 
 #sec-four {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: relative;
-    top: 2000px;
+    top: 1655px;
     padding: 8% 15%;
 }
+
 
 .camps {
     display: flex;
@@ -335,29 +506,31 @@ video {
 
 ::placeholder {
     text-align: center;
-    font-size: 35px;
+    font-size: 32px;
     opacity: 1;
     font-weight: 700;
 }
 
-.camps label{
-  font-size: 25px;
-  font-weight: 700;
+.camps label {
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.camps button{
+.camps button {
     cursor: pointer;
-    position: relative ;
-    left: 165px;
+    position: relative;
+    left: 117px;
     background-color: #fff;
     width: 31%;
     height: 80px;
-    outline: 2px solid rgba(0,0,0,0);
-    outline-offset: 2px; 
-    border: none;    
-    border-bottom: solid #000; 
+    outline: 2px solid rgba(0, 0, 0, 0);
+    outline-offset: 2px;
+    border: none;
+    border-bottom: solid #000;
     font-weight: 700;
 }
+
+
 
 .noise {
     display: block;
